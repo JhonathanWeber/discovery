@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel='stylesheet' href='css/style.css' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto' />
+
+    <title>Tabela complexa</title>
+</head>
+
+<body>
+    <main>
+        <article>
+            <section>
+                <h1>Tabela Complexa</h1>
+                <h2>Dados de 2 Lojas</h2>
+                <p>Em seu corpo, a tabela deverá informar a quantidade de produtos <strong>produzidos</strong>, quantos
+                    <strong>vendidos</strong> e agrupa por nome de produtos.</p>
+            </section>
+            <section>
+                <table>
+                    <caption>Produzidos x Vendidos por Loja</caption>
+                    
+                    <colgroup>
+                        <col>
+                        <col span="2" style="background-color:cornflowerblue">
+                        <col span="2" style="background-color:chartreuse">
+
+                    </colgroup>
+
+                    <thead>
+                        <tr>
+                            <th rowspan="2"></th>
+                            <th colspan="2" scope="colgroup">Afonso Pena</th>
+                            <th colspan="2" scope="colgroup">Antônia Pereira</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Produzidos</th>
+                            <th scope="col">Vendidos</th>
+                            <th scope="col">Produzidos</th>
+                            <th scope="col">Vendidos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Vassoras</th>
+                            <td>50</td>
+                            <td>30</td>
+                            <td>20</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Baldes</th>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>30</td>
+                            <td>25</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>
